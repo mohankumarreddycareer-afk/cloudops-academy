@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn DevOps, Git, Docker, Terraform, CI/CD and automation with practical examples.">
+  <title>DevOps Learning | CloudOps Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="devops.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">☁ CloudOps <span>Academy</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aws.html">AWS</a>
+      <a href="#tools">DevOps Tools</a>
+      <a href="#projects">Projects</a>
+      <a href="#interviews">Interview Prep</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AUTOMATE • DEPLOY • MONITOR</p>
+      <h1>Learn <span>DevOps Engineering</span></h1>
+      <p class="hero-text">
+        Learn the tools and workflows used to build, test, deploy,
+        troubleshoot and monitor modern applications.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#tools">Explore Tools</a>
+        <a class="btn secondary" href="#projects">Practice Projects</a>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="section-heading">
+        <p class="eyebrow">DEVOPS TOOLKIT</p>
+        <h2>Learn Tools by Doing</h2>
+        <p>Search a tool to find its purpose and starter commands.</p>
+      </div>
+
+      <div class="search-wrap">
+        <input id="toolSearch" type="search"
+          placeholder="Search Git, Docker, Terraform, CI/CD..."
+          aria-label="Search DevOps tools">
+      </div>
+
+      <div class="cards">
+        <article class="card" data-search="git github version control commit push pull">
+          <div class="card-icon">🔀</div>
+          <p class="card-label">VERSION CONTROL</p>
+          <h3>Git & GitHub</h3>
+          <p>Track code changes and collaborate through repositories.</p>
+          <pre><code>git --version
+git status
+git add .
+git commit -m "Update project"
+git push</code></pre>
+          <p><strong>Telugu:</strong> Code changes track చేయడానికి Git, online repository లో share చేయడానికి GitHub ఉపయోగిస్తాం.</p>
+        </article>
+
+        <article class="card" data-search="docker container image build run ps logs">
+          <div class="card-icon">🐳</div>
+          <p class="card-label">CONTAINERS</p>
+          <h3>Docker</h3>
+          <p>Package an application and its dependencies into containers.</p>
+          <pre><code>docker --version
+docker images
+docker ps -a
+docker logs CONTAINER_ID</code></pre>
+          <p><strong>Telugu:</strong> Application ని అవసరమైన dependencies తో container లో run చేయడానికి Docker ఉపయోగిస్తాం.</p>
+        </article>
+
+        <article class="card" data-search="terraform infrastructure as code iac plan apply destroy">
+          <div class="card-icon">🏗️</div>
+          <p class="card-label">INFRASTRUCTURE AS CODE</p>
+          <h3>Terraform</h3>
+          <p>Define and manage infrastructure through configuration files.</p>
+          <pre><code>terraform --version
+terraform init
+terraform fmt
+terraform validate
+terraform plan</code></pre>
+          <p><strong>Telugu:</strong> Infrastructure ని configuration files ద్వారా repeatable గా create చేయడానికి Terraform ఉపయోగిస్తాం.</p>
+        </article>
+
+        <article class="card" data-search="cicd github actions continuous integration deployment pipeline">
+          <div class="card-icon">🔄</div>
+          <p class="card-label">AUTOMATION</p>
+          <h3>CI/CD Pipelines</h3>
+          <p>Automate build, testing and deployment when code changes.</p>
+          <ul>
+            <li>Source code checkout</li>
+            <li>Build and test</li>
+            <li>Package application</li>
+            <li>Deploy and verify</li>
+          </ul>
+          <p><strong>Telugu:</strong> Code changes వచ్చినప్పుడు build, test, deployment steps automatic గా run అవుతాయి.</p>
+        </article>
+
+        <article class="card" data-search="powershell scripting automation windows commands">
+          <div class="card-icon">⌨️</div>
+          <p class="card-label">SCRIPTING</p>
+          <h3>PowerShell</h3>
+          <p>Automate Windows administration and development workflows.</p>
+          <pre><code>$PSVersionTable
+Get-Location
+Get-ChildItem
+Get-Process</code></pre>
+          <p><strong>Telugu:</strong> Repeated tasks ని commands, scripts ద్వారా automate చేయవచ్చు.</p>
+        </article>
+
+        <article class="card" data-search="monitoring logging metrics observability cloudwatch">
+          <div class="card-icon">📊</div>
+          <p class="card-label">OBSERVABILITY</p>
+          <h3>Monitoring & Logs</h3>
+          <p>Track application health, performance and failures.</p>
+          <ul>
+            <li>CPU and memory metrics</li>
+            <li>Application logs</li>
+            <li>Alerts and dashboards</li>
+            <li>AWS CloudWatch fundamentals</li>
+          </ul>
+          <p><strong>Telugu:</strong> Application సమస్యలను త్వరగా గుర్తించడానికి metrics, logs, alerts ఉపయోగిస్తాం.</p>
+        </article>
+      </div>
+      <p id="toolSearchMessage" class="search-message" aria-live="polite"></p>
+    </section>
+
+    <section class="section roadmap" id="projects">
+      <p class="eyebrow">PRACTICAL PROJECTS</p>
+      <h2>Build Your DevOps Portfolio</h2>
+      <div class="steps">
+        <div><span>PROJECT 01</span><p>Host a website using GitHub Pages</p></div>
+        <div><span>PROJECT 02</span><p>Build and run a Docker container locally</p></div>
+        <div><span>PROJECT 03</span><p>Create a GitHub Actions CI workflow</p></div>
+        <div><span>PROJECT 04</span><p>Provision AWS infrastructure with Terraform</p></div>
+      </div>
+      <p>Start locally and use AWS only when needed. Review resource costs before deployment.</p>
+    </section>
+
+    <section class="section roadmap" id="interviews">
+      <p class="eyebrow">INTERVIEW PRACTICE</p>
+      <h2>DevOps Interview Questions</h2>
+
+      <details class="card">
+        <summary>1. What is DevOps?</summary>
+        <p>DevOps combines practices, collaboration and automation to improve software delivery and operations.</p>
+      </details>
+
+      <details class="card">
+        <summary>2. What is the difference between an image and a container?</summary>
+        <p>A Docker image is a packaged template. A container is a running or stopped instance created from an image.</p>
+      </details>
+
+      <details class="card">
+        <summary>3. What is CI/CD?</summary>
+        <p>Continuous Integration automates integrating and testing changes. Continuous Delivery or Deployment automates release preparation or deployment.</p>
+      </details>
+
+      <details class="card">
+        <summary>4. What is Infrastructure as Code?</summary>
+        <p>IaC manages infrastructure using version-controlled configuration files instead of relying only on manual setup.</p>
+      </details>
+
+      <details class="card">
+        <summary>5. How do you troubleshoot a failed container?</summary>
+        <p>Check container status, inspect configuration, review logs, verify ports and environment settings, and reproduce the failure safely.</p>
+        <pre><code>docker ps -a
+docker logs CONTAINER_ID
+docker inspect CONTAINER_ID</code></pre>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html">☁ CloudOps <span>Academy</span></a>
+    <p>Learn • Practice • Build • Grow</p>
+    <p>Educational content for cloud and DevOps learners.</p>
+  </footer>
+</body>
+</html>
