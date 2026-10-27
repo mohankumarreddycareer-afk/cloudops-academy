@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn AWS services, commands, practical labs and interview questions with CloudOps Academy.">
+  <title>AWS Learning | CloudOps Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="aws.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">☁ CloudOps <span>Academy</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#services">AWS Services</a>
+      <a href="#labs">Practical Labs</a>
+      <a href="#interviews">Interview Prep</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AWS CLOUD LEARNING PATH</p>
+      <h1>Master <span>AWS Cloud</span></h1>
+      <p class="hero-text">
+        Learn cloud fundamentals, AWS services, architecture,
+        security and hands-on project workflows.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn secondary" href="#labs">Start Practical Labs</a>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">CORE AWS SERVICES</p>
+        <h2>Learn the Building Blocks</h2>
+        <p>Search services and learn what they do, when to use them and how they fit into an architecture.</p>
+      </div>
+
+      <div class="search-wrap">
+        <input id="awsSearch" type="search"
+          placeholder="Search EC2, S3, IAM, VPC..."
+          aria-label="Search AWS services">
+      </div>
+
+      <div class="cards">
+        <article class="card" data-search="ec2 compute virtual machine server">
+          <div class="card-icon">🖥️</div>
+          <p class="card-label">COMPUTE</p>
+          <h3>Amazon EC2</h3>
+          <p>Run virtual servers in the AWS cloud.</p>
+          <ul>
+            <li>Choose an instance type and OS</li>
+            <li>Configure security groups</li>
+            <li>Connect using SSH or RDP</li>
+          </ul>
+          <p><strong>Telugu:</strong> Cloud లో virtual server create చేసి applications run చేయడానికి EC2 ఉపయోగిస్తాం.</p>
+        </article>
+
+        <article class="card" data-search="s3 storage buckets objects files">
+          <div class="card-icon">🪣</div>
+          <p class="card-label">STORAGE</p>
+          <h3>Amazon S3</h3>
+          <p>Store files and objects in buckets.</p>
+          <ul>
+            <li>Create and organize buckets</li>
+            <li>Manage access permissions</li>
+            <li>Use versioning and lifecycle rules</li>
+          </ul>
+          <p><strong>Telugu:</strong> Images, backups, logs వంటి files store చేయడానికి S3 ఉపయోగపడుతుంది.</p>
+        </article>
+
+        <article class="card" data-search="iam security users roles policies permissions">
+          <div class="card-icon">🔐</div>
+          <p class="card-label">SECURITY</p>
+          <h3>AWS IAM</h3>
+          <p>Control who can access AWS resources and what they can do.</p>
+          <ul>
+            <li>Users, groups and roles</li>
+            <li>Permission policies</li>
+            <li>Least-privilege access</li>
+          </ul>
+          <p><strong>Telugu:</strong> ఎవరికి ఏ AWS service access ఉండాలో IAM permissions ద్వారా control చేస్తాం.</p>
+        </article>
+
+        <article class="card" data-search="vpc network subnet route table internet gateway">
+          <div class="card-icon">🌐</div>
+          <p class="card-label">NETWORKING</p>
+          <h3>Amazon VPC</h3>
+          <p>Create an isolated virtual network for AWS resources.</p>
+          <ul>
+            <li>Public and private subnets</li>
+            <li>Route tables and gateways</li>
+            <li>Network and security design</li>
+          </ul>
+          <p><strong>Telugu:</strong> AWS resources కోసం మనకు కావాల్సిన IP range, subnets, routes ఉన్న virtual network VPC.</p>
+        </article>
+
+        <article class="card" data-search="rds database sql relational">
+          <div class="card-icon">🗄️</div>
+          <p class="card-label">DATABASE</p>
+          <h3>Amazon RDS</h3>
+          <p>Run supported relational databases using a managed service.</p>
+          <ul>
+            <li>Database configuration</li>
+            <li>Backups and maintenance</li>
+            <li>Connectivity and access control</li>
+          </ul>
+          <p><strong>Telugu:</strong> Application data ని relational database లో store చేయడానికి RDS ఉపయోగించవచ్చు.</p>
+        </article>
+
+        <article class="card" data-search="elb load balancer alb target group autoscaling">
+          <div class="card-icon">⚖️</div>
+          <p class="card-label">HIGH AVAILABILITY</p>
+          <h3>Load Balancer</h3>
+          <p>Distribute incoming application traffic across targets.</p>
+          <ul>
+            <li>Listeners and rules</li>
+            <li>Target groups and health checks</li>
+            <li>Integration with Auto Scaling</li>
+          </ul>
+          <p><strong>Telugu:</strong> Incoming requests ని healthy application servers మధ్య distribute చేస్తుంది.</p>
+        </article>
+      </div>
+      <p id="awsSearchMessage" class="search-message" aria-live="polite"></p>
+    </section>
+
+    <section class="section roadmap" id="labs">
+      <p class="eyebrow">HANDS-ON PRACTICE</p>
+      <h2>AWS Practical Labs</h2>
+      <div class="steps">
+        <div><span>LAB 01</span><p>Explore the AWS Console and IAM security</p></div>
+        <div><span>LAB 02</span><p>Launch an EC2 instance and connect safely</p></div>
+        <div><span>LAB 03</span><p>Create a VPC with public and private subnets</p></div>
+        <div><span>LAB 04</span><p>Configure a load balancer and target group</p></div>
+      </div>
+      <p>Always review pricing and free-plan limits before creating resources. Delete lab resources when finished.</p>
+    </section>
+
+    <section class="section roadmap">
+      <p class="eyebrow">COMMAND LINE</p>
+      <h2>AWS CLI Basics</h2>
+      <p>Install and configure AWS CLI using an authorized identity before running commands.</p>
+      <pre><code>aws --version
+aws sts get-caller-identity
+aws s3 ls</code></pre>
+      <p><strong>What these do:</strong> Check the CLI version, identify the active AWS identity, and list accessible S3 buckets.</p>
+      <p>Never paste AWS access keys or secret keys into a public website or GitHub repository.</p>
+    </section>
+
+    <section class="section roadmap" id="interviews">
+      <p class="eyebrow">INTERVIEW PREPARATION</p>
+      <h2>AWS Interview Questions</h2>
+
+      <details class="card">
+        <summary>1. What is AWS?</summary>
+        <p>AWS is a cloud platform offering compute, storage, networking, databases and many other services on demand.</p>
+      </details>
+
+      <details class="card">
+        <summary>2. What is the difference between EC2 and S3?</summary>
+        <p>EC2 provides virtual compute capacity. S3 stores objects such as files, backups and logs.</p>
+      </details>
+
+      <details class="card">
+        <summary>3. What is a VPC?</summary>
+        <p>A VPC is a logically isolated virtual network in AWS where you define IP ranges, subnets and routing.</p>
+      </details>
+
+      <details class="card">
+        <summary>4. What is IAM least privilege?</summary>
+        <p>Grant only the permissions required to perform a task, and avoid unnecessary broad access.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html">☁ CloudOps <span>Academy</span></a>
+    <p>Learn • Practice • Build • Grow</p>
+    <p>Educational content for cloud and DevOps learners.</p>
+  </footer>
+</body>
+</html>

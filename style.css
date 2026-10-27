@@ -303,3 +303,30 @@ footer .brand {
     padding-right: 6%;
   }
 }
+
+pre {
+  overflow-x: auto;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #050b13;
+  color: #a9e8c2;
+}
+
+details.card {
+  margin: 12px 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details[open] summary {
+  color: var(--accent);
+}
+
+.card[hidden] {
+  display: none;
+}
+
