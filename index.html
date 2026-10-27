@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudOps Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+    }
+    header {
+      padding: 25px;
+      background: #172943;
+      text-align: center;
+    }
+    header h1 { color: #ff9d42; }
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #17243a;
+      border: 1px solid #30445f;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    h2 { color: #ffb15e; }
+    code {
+      display: block;
+      background: #080e18;
+      padding: 12px;
+      border-radius: 8px;
+      overflow-wrap: anywhere;
+      color: #a9d4ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CloudOps Academy</h1>
+    <p>AWS & DevOps Learning Platform</p>
+  </header>
+
+  <main>
+    <h2>AWS Learning</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Amazon EC2</h3>
+        <p>Learn virtual servers, security groups and instance management.</p>
+      </div>
+      <div class="card">
+        <h3>Amazon S3</h3>
+        <p>Learn object storage and static website hosting.</p>
+      </div>
+      <div class="card">
+        <h3>Amazon VPC</h3>
+        <p>Learn subnets, route tables and network security.</p>
+      </div>
+    </div>
+
+    <h2>DevOps Tools</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Git & GitHub</h3>
+        <p>Version control and collaboration.</p>
+        <code>git status</code>
+      </div>
+      <div class="card">
+        <h3>Docker</h3>
+        <p>Build and run application containers.</p>
+        <code>docker --version</code>
+      </div>
+      <div class="card">
+        <h3>Terraform</h3>
+        <p>Manage cloud infrastructure as code.</p>
+        <code>terraform --version</code>
+      </div>
+      <div class="card">
+        <h3>CI/CD Pipeline</h3>
+        <p>Automate build, test and deployment using GitHub Actions.</p>
+      </div>
+    </div>
+
+    <h2>First Practical Project</h2>
+    <div class="card">
+      <h3>Deploy a Website using GitHub</h3>
+      <p>1. Create your HTML website.</p>
+      <p>2. Track changes using Git.</p>
+      <p>3. Push the code to GitHub.</p>
+      <p>4. Publish the website using GitHub Pages.</p>
+    </div>
+  </main>
+</body>
+</html>
