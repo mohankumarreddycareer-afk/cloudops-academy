@@ -4,101 +4,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CloudOps Academy</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: white;
-    }
-    header {
-      padding: 25px;
-      background: #172943;
-      text-align: center;
-    }
-    header h1 { color: #ff9d42; }
-    main {
-      max-width: 950px;
-      margin: auto;
-      padding: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-    .card {
-      background: #17243a;
-      border: 1px solid #30445f;
-      border-radius: 12px;
-      padding: 20px;
-    }
-    h2 { color: #ffb15e; }
-    code {
-      display: block;
-      background: #080e18;
-      padding: 12px;
-      border-radius: 8px;
-      overflow-wrap: anywhere;
-      color: #a9d4ff;
-    }
-  </style>
+  <meta name="description" content="Learn AWS, DevOps, Docker, Terraform and CI/CD with practical projects and interview preparation.">
+  <title>CloudOps Academy | AWS & DevOps Learning</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>CloudOps Academy</h1>
-    <p>AWS & DevOps Learning Platform</p>
+  <header class="navbar">
+    <a class="brand" href="#home">☁ CloudOps <span>Academy</span></a>
+    <nav>
+      <a href="#aws">AWS</a>
+      <a href="#devops">DevOps</a>
+      <a href="#projects">Projects</a>
+      <a href="#interviews">Interview Prep</a>
+    </nav>
   </header>
 
   <main>
-    <h2>AWS Learning</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Amazon EC2</h3>
-        <p>Learn virtual servers, security groups and instance management.</p>
+    <section class="hero" id="home">
+      <p class="eyebrow">YOUR CLOUD. YOUR FUTURE.</p>
+      <h1>Learn Cloud.<br><span>Build Real Projects.</span></h1>
+      <p class="hero-text">
+        A practical learning platform for AWS, DevOps, automation,
+        CI/CD pipelines and cloud architecture.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#learning">Start Learning →</a>
+        <a class="btn secondary" href="#projects">Explore Projects</a>
       </div>
-      <div class="card">
-        <h3>Amazon S3</h3>
-        <p>Learn object storage and static website hosting.</p>
+      <div class="hero-tags">
+        <span>AWS Cloud</span><span>Docker</span>
+        <span>Terraform</span><span>CI/CD</span>
       </div>
-      <div class="card">
-        <h3>Amazon VPC</h3>
-        <p>Learn subnets, route tables and network security.</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>DevOps Tools</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Git & GitHub</h3>
-        <p>Version control and collaboration.</p>
-        <code>git status</code>
+    <section class="section" id="learning">
+      <div class="section-heading">
+        <p class="eyebrow">LEARNING PATH</p>
+        <h2>Build Your Technical Skills</h2>
+        <p>Learn concepts, practice commands and build job-ready projects.</p>
       </div>
-      <div class="card">
-        <h3>Docker</h3>
-        <p>Build and run application containers.</p>
-        <code>docker --version</code>
-      </div>
-      <div class="card">
-        <h3>Terraform</h3>
-        <p>Manage cloud infrastructure as code.</p>
-        <code>terraform --version</code>
-      </div>
-      <div class="card">
-        <h3>CI/CD Pipeline</h3>
-        <p>Automate build, test and deployment using GitHub Actions.</p>
-      </div>
-    </div>
 
-    <h2>First Practical Project</h2>
-    <div class="card">
-      <h3>Deploy a Website using GitHub</h3>
-      <p>1. Create your HTML website.</p>
-      <p>2. Track changes using Git.</p>
-      <p>3. Push the code to GitHub.</p>
-      <p>4. Publish the website using GitHub Pages.</p>
-    </div>
+      <div class="search-wrap">
+        <input id="courseSearch" type="search"
+          placeholder="Search AWS, Docker, Terraform..."
+          aria-label="Search learning topics">
+      </div>
+
+      <div class="cards">
+        <article class="card" id="aws" data-search="aws ec2 s3 iam vpc rds route53">
+          <div class="card-icon">☁️</div>
+          <p class="card-label">CLOUD COMPUTING</p>
+          <h3>AWS Learning</h3>
+          <p>Understand cloud services, networking, security and scalable architecture.</p>
+          <ul>
+            <li>EC2, S3 and IAM</li>
+            <li>VPC and Security Groups</li>
+            <li>Load Balancer and Auto Scaling</li>
+            <li>RDS and Route 53</li>
+          </ul>
+          <a class="card-link" href="#aws-roadmap">Explore AWS →</a>
+        </article>
+
+        <article class="card" id="devops" data-search="devops git github docker terraform powershell cicd">
+          <div class="card-icon">⚙️</div>
+          <p class="card-label">AUTOMATION</p>
+          <h3>DevOps Engineering</h3>
+          <p>Learn how teams build, test, deploy and maintain applications.</p>
+          <ul>
+            <li>Git and GitHub</li>
+            <li>Docker containers</li>
+            <li>Terraform and IaC</li>
+            <li>CI/CD with GitHub Actions</li>
+          </ul>
+          <a class="card-link" href="#devops-roadmap">Explore DevOps →</a>
+        </article>
+
+        <article class="card" id="projects" data-search="projects real time deployment web app pipeline">
+          <div class="card-icon">🚀</div>
+          <p class="card-label">HANDS-ON PRACTICE</p>
+          <h3>Real-Time Projects</h3>
+          <p>Practice practical deployment workflows from source code to production.</p>
+          <ul>
+            <li>Deploy a static website</li>
+            <li>Build a Docker image</li>
+            <li>Create a CI/CD pipeline</li>
+            <li>Deploy an AWS architecture</li>
+          </ul>
+          <a class="card-link" href="#project-roadmap">View Projects →</a>
+        </article>
+
+        <article class="card" id="interviews" data-search="interview questions resume jobs preparation">
+          <div class="card-icon">🎯</div>
+          <p class="card-label">CAREER PREPARATION</p>
+          <h3>Interview Preparation</h3>
+          <p>Strengthen your fundamentals and prepare to explain your projects.</p>
+          <ul>
+            <li>AWS interview questions</li>
+            <li>Linux and networking basics</li>
+            <li>Docker and CI/CD questions</li>
+            <li>Project explanation practice</li>
+          </ul>
+          <a class="card-link" href="#interview-roadmap">Start Preparation →</a>
+        </article>
+      </div>
+      <p id="searchMessage" class="search-message" aria-live="polite"></p>
+    </section>
+
+    <section class="section roadmap" id="aws-roadmap">
+      <p class="eyebrow">PATH 01</p>
+      <h2>AWS Roadmap</h2>
+      <div class="steps">
+        <div><span>01</span><p>Cloud fundamentals and IAM</p></div>
+        <div><span>02</span><p>EC2, S3 and Linux basics</p></div>
+        <div><span>03</span><p>VPC, subnets and routing</p></div>
+        <div><span>04</span><p>Load Balancer and Auto Scaling</p></div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="devops-roadmap">
+      <p class="eyebrow">PATH 02</p>
+      <h2>DevOps Roadmap</h2>
+      <div class="steps">
+        <div><span>01</span><p>Git and GitHub workflow</p></div>
+        <div><span>02</span><p>Linux and PowerShell commands</p></div>
+        <div><span>03</span><p>Docker images and containers</p></div>
+        <div><span>04</span><p>CI/CD and Terraform basics</p></div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="project-roadmap">
+      <p class="eyebrow">PATH 03</p>
+      <h2>Project Roadmap</h2>
+      <div class="steps">
+        <div><span>01</span><p>Publish this website using GitHub Pages</p></div>
+        <div><span>02</span><p>Build and run a Docker container locally</p></div>
+        <div><span>03</span><p>Automate deployment using GitHub Actions</p></div>
+        <div><span>04</span><p>Build an AWS project with cost controls</p></div>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="interview-roadmap">
+      <p class="eyebrow">CAREER TRACK</p>
+      <h2>Learn It. Practice It. Explain It.</h2>
+      <p>For every topic, aim to understand the concept, run a practical lab,
+        troubleshoot an error and explain your solution in an interview.</p>
+    </section>
   </main>
+
+  <footer>
+    <a class="brand" href="#home">☁ CloudOps <span>Academy</span></a>
+    <p>Learn • Practice • Build • Grow</p>
+    <p>Educational content for cloud and DevOps learners.</p>
+  </footer>
 </body>
 </html>
